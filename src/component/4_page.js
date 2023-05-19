@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import imageA from "../img/portfolio.png";
+import imageA from "../img/write.png";
 
 export default function Fourth(){
     const refs=useRef([]);// ref는 배열로 관리
@@ -28,11 +28,14 @@ export default function Fourth(){
 
   },[])
     return(
-        <Box sx={{ width:'100%',backgroundColor:'#141414',height:{xs:'120vh',md:'150%'}}}>
-          <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',pt:25}}>
+        <Box sx={{ display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column',width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'}}}>
+          <Box sx={{px:2,display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column'}}>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Typography ref={textRef} color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold",opacity:0}}>
-                여기 포트폴리오
+                기록에 기로가 없도록
+                </Typography>
+                <Typography ref={textRef} color="white" sx={{fontSize:25,fontFamily:'SUIT Variable',opacity:0}}>
+                기록 양식이 제공되어 기록에 대한 고민이 없게
                 </Typography>
             </Box>
             <Box

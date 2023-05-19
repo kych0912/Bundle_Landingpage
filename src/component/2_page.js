@@ -1,8 +1,8 @@
 import {Box,Typography,Button,Link} from '@mui/material';
 import React, { useState,useEffect,useRef } from "react";
 import gsap from 'gsap';
-import ReactTyped from "react-typed";
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import imageA from "../img/image20.png"
 
 export default function Second(){
   const refs = useRef([]);
@@ -20,35 +20,36 @@ export default function Second(){
   },[])
 
     return(
-        <Box sx={{ width:'100%',backgroundColor:'#141414',height:{xs:'120vh',md:'150%'}}}>
-          <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',pt:25}}>
+        <Box sx={{ width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'}}}>
+          <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',pt:20}}>
             <Box sx={{pb:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <Typography color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                간단하게 작성하세요
+                <Typography color="white" sx={{fontSize:60,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                정리하기 어려운
+                </Typography>
+                <Typography color="white" sx={{fontSize:60,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                커리어 기록들
                 </Typography>
             </Box>
           </Box>
           <Box sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Box sx={{display:'flex',flexDirection:'column'}}>
-              <Box ref={(el)=>refs.current[0]=el} sx={{pb:1,opacity:0}}>
-                <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                  오늘 공부한 내용은 무엇인가요?
+                <Typography color="white" sx={{fontSize:25,fontFamily:'SUIT Variable'}}>
+                정리하지 않으면 놓치기 쉬운 기록들
                 </Typography>
-              </Box>
-              <Box ref={(el)=>refs.current[1]=el} sx={{border:1,borderColor:"white",width:400,height:200,display:'flex', fontFamily : 'SUIT Variable',fontWeight:"bold",opacity:0,borderRadius:5}}>
-                <div 
-                    style={{color:"white",padding:'10px',paddingLeft:'15px'}}>
-                  <ReactTyped
-                    strings={["Carrying Capacity의 개념", "SQL을 이용한 데이터분석", "SSR,CSR 개념"]}
-                    typeSpeed={70}
-                    backSpeed={40}
-                    backDelay={1}
-                    loop
-                    smartBackspace
-                  />
-                </div>
-              </Box>
             </Box>
+          </Box>
+          <Box sx ={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <Box
+            component="img"
+            sx={{
+              width: {xs:'50vh',md:"90vh"},
+              borderTopLeftRadius:15,
+              borderTopRightRadius:15,
+              pt:10
+            }}
+            alt="The house from the offer."
+            src={imageA}
+            />
           </Box>
       </Box>
     )

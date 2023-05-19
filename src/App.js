@@ -2,14 +2,22 @@ import logo from './logo.svg';
 import FullPageScroll from './FullPageScroll';
 import Navbar from '../src/component/navbar';
 import './App.css';
-
+import DashBoard from "./component/DahsBoard/DashBoard";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from  "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar/>
-      <FullPageScroll/>
-    </div>
+      <Routes>
+        <Route path="/" element={<FullPageScroll/>}/>
+        <Route path="/Dashboard" element={<DashBoard/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

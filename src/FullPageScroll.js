@@ -21,7 +21,6 @@ const FullPageScroll = () =>{
 
     return(
         <Fullpage>
-            <FullpageNavigation/>
             <FullPageSections>
                 <FullpageSection >
                     <First/>
