@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import "./page.css"
 import imageA from "../img/portfolio.png";
+import MainImage from "../img/bundle_bg.jpg"
 
 export default function First(){
   const refs=useRef([]);// ref는 배열로 관리
@@ -24,28 +25,31 @@ export default function First(){
 
   },[])
     return(
-      <Box  sx={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'},pt:{xs:10,md:8},flexDirection:{xs:'column',md:'row'}}}>
-        <Box sx={{display:'flex',justifyContent:'start',alignItems:{xs:'center',md:'start'},flexDirection:'column',pb:8}}>
-          <Box sx={{pb:3,display:'flex',justifyContent:'center',alignItems:'start',flexDirection:'column'}}>
-            <Box ref={(el)=>refs.current[0]=el} sx={{alignItems:'start',justifyContent:'start',display:'flex',flexDirection:'column',opacity:0}}>
-              <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-              대학생 커리어 관리
+      <Box  sx={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'},pt:{xs:5,md:8},flexDirection:{xs:'column',md:'row'},backgroundImage:`url(${MainImage})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'top center'}}>
+        <Box sx={{display:'flex',justifyContent:'start',alignItems:{xs:'center',md:'start'},flexDirection:'column',pb:{xs:10,md:8}}}>
+          <Box sx={{pb:1,display:'flex',justifyContent:'center',alignItems:{xs:'center',md:'start'},flexDirection:'column'}}>
+            <Box ref={(el)=>refs.current[0]=el} sx={{alignItems:{xs:'center',md:'start'},justifyContent:'start',display:'flex',flexDirection:'column',opacity:0}}>
+              <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                커리어 정리가 어려울 때
               </Typography>
-              <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-              번들에서 간편하게 
+              <Typography color="white" sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                내 커리어로 만드는
+              </Typography>
+              <Typography color="white" sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                나의 첫번째 포트폴리오 
               </Typography>
             </Box>
-            <Box ref={(el)=>refs.current[1]=el} sx={{pt:1, display:'flex',flexDirection:'column',alignItems:'start',opacity:0}}>
-                <Typography color="white" sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                  커리어 기록 정리, 번들이 알아서
+            <Box ref={(el)=>refs.current[1]=el} sx={{ display:'flex',flexDirection:'column',alignItems:'start',opacity:0}}>
+                <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                  혼자서는 막막한 포트폴리오, 대신 만들어드립니다.
                 </Typography>
             </Box>
           </Box>
           <Box sx={{display:'flex',justifyContent:'start',alignItems:'start'}}>
             <Box sx ={{pt:2}}>
-              <Button variant="contained" pill sx={{backgroundColor : "white", border:1,color:'white',borderRadius:8,width:{xs:170,md:200},height:{xs:40,md:60}}}>
+              <Button variant="contained" pill sx={{backgroundColor : "white", border:1,color:'white',borderRadius:3,width:{xs:170,md:200},height:{xs:40,md:60}}}>
                   <Typography color="black" sx={{fontFamily:'SUIT Variable',fontWeight:"bold",fontSize:{xs:20,md:25}}}>
-                      무료로 시작하기
+                      지금 시작하기
                   </Typography>
               </Button>
             </Box>
@@ -56,7 +60,7 @@ export default function First(){
           ref={imgref}
           component="img"
           sx={{
-            width: {xs:'50vh',md:"80vh"},
+            width: {xs:'350px',md:"70vh"},
             opacity:0,
             borderTopLeftRadius:15,
             borderTopRightRadius:15

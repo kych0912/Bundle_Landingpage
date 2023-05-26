@@ -28,14 +28,17 @@ export default function Fourth(){
 
   },[])
     return(
-        <Box sx={{ display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column',width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'}}}>
+        <Box sx={{ display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column',width:'100%',height:{xs:'100vh',md:'100%'}}}>
           <Box sx={{px:2,display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column'}}>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <Typography ref={textRef} color="white" sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold",opacity:0}}>
-                기록에 기로가 없도록
+                <Typography sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                  기억하기 어려운 세부내용
                 </Typography>
-                <Typography ref={textRef} color="white" sx={{fontSize:25,fontFamily:'SUIT Variable',opacity:0}}>
-                기록 양식이 제공되어 기록에 대한 고민이 없게
+                <Typography sx={{fontSize:50,fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                  BUNDLE 에 다 있어요
+                </Typography>
+                <Typography ref={textRef} sx={{fontSize:25,fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                  활동기록, 배운점 등 모든 기록이 여기에 있어요
                 </Typography>
             </Box>
             <Box

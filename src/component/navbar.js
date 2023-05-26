@@ -8,22 +8,27 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import './navbar.css';
 import Button from '@mui/material/Button';
-import {Link} from "@mui/material";
+import {Link,Divider} from "@mui/material";
 
 
 export default function PrimarySearchAppBar() {
-
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  }
+  useEffect(()=>{
+        window.addEventListener('scroll', updateScroll);
+    });
   return (
     <Box sx={{ flexGrow: 1, color:'white'}}>
-      <AppBar width="100%" position="fixed" sx={{background:'#141414'}}>
+      <AppBar width="100%" position="fixed" color = {scrollPosition > 1200 ? '': 'transparent'} elevation={0} sx={{opacity: scrollPosition > 3200 ? 0 : 1}} >
         <Toolbar sx = {{height:70, size:30}}>
             <Link underline="none" color="inherit" href="/">
               <Typography
                   variant="h4"
                   noWrap
                   component="div"
-                  color = "black"
-                  sx={{ display: { xs: 'none', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",color:'white'}}
+                  sx={{ display: { xs: 'none', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
               >
                 Bundle
               </Typography>
@@ -33,7 +38,7 @@ export default function PrimarySearchAppBar() {
                   variant="h4"
                   noWrap
                   component="div"
-                  sx={{ display: { xs: 'block', sm: 'none' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",color:'white'}}
+                  sx={{ display: { xs: 'block', sm: 'none' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
               >
                   Bundle
               </Typography>
@@ -44,11 +49,26 @@ export default function PrimarySearchAppBar() {
                     variant="h4"
                     noWrap
                     component="div"
-                    color = "black"
-                    sx={{ display: { xs: 'block', sm: 'block' } ,pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",color:'white'}}
+                    sx={{ display: { xs: 'block', sm: 'block' },pr:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
                 >
-                    Contact
-                </Typography>
+                    홈
+          </Typography>
+          <Typography
+                    variant="h4"
+                    noWrap
+                    component="div"
+                    sx={{ display: { xs: 'block', sm: 'block' },pr:4,pl:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
+                >
+                    자주하는 질문
+          </Typography>
+          <Typography
+                    variant="h4"
+                    noWrap
+                    component="div"
+                    sx={{ display: { xs: 'block', sm: 'block' } ,pl:4,pr:5,fontSize:20,fontFamily:'SUIT Variable'}}
+                >
+                    문의하기
+            </Typography>
           <Link href="/Dashboard">
             <Button variant="contained" pill sx={{borderRadius:8}}>
                 <Typography color="white" sx={{fontFamily:'SUIT Variable',fontWeight:"bold"}}>

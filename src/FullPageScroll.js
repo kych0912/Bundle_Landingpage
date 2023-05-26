@@ -5,6 +5,7 @@ import Second from './component/2_page';
 import Third from './component/3_page';
 import Fourth from './component/4_page';
 import Fifth from './component/5_page';
+import Sixth from './component/6_page';
 import './App.css';
 
 
@@ -36,6 +37,9 @@ const FullPageScroll = () =>{
                 </FullpageSection>
                 <FullpageSection>
                     <Fifth/>
+                </FullpageSection>
+                <FullpageSection>
+                    <Sixth/>
                 </FullpageSection>
             </FullPageSections>
         </Fullpage>
