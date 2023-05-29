@@ -12,6 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import "./style.css";
+
 // import required modules
 import { Navigation } from "swiper";
 
@@ -32,8 +34,8 @@ export default function Second(){
   },[])
 
     return(
-        <Box sx={{ width:'100%',backgroundColor:'#202020',height:{xs:'100vh',md:'100%'}}}>
-          <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',pt:{xs:25,md:25}}}>
+        <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column', width:'100%',backgroundColor:'#202020',height:{xs:'100vh',md:'100%'}}}>
+          <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
             <Box sx={{pb:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   어려운 커리어 정리
@@ -50,10 +52,11 @@ export default function Second(){
                 </Typography>
             </Box>
           </Box>
-          <Box sx={{display:{ xs: 'flex', md: 'none' },pt:10,justifyContent:'center',alignItems:'center'}}>
+
+          <Box sx={{display:{ xs: 'flex', md: 'none ' },pt:10,justifyContent:'center',alignItems:'center'}}>
             <Swiper navigation={true} modules={[Navigation]}>
               <SwiperSlide>
-                <Box >
+                <Box sx={{}}>
                   <Card sx={{width:'300px',height:'200px',display:'flex',justifyContent:'center',alignItems:'start',borderRadius:3,backgroundColor:'#343434',flexDirection:'column'}}>
                     <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:600,pl:3}}>
                       그 자료 어딨더라...
@@ -120,6 +123,7 @@ export default function Second(){
               </SwiperSlide>
             </Swiper>
           </Box>
+
           <Box sx ={{display:{xs:'none',md:'flex'},justifyContent:'center',alignItems:'center',pt:10}}>
             <Box sx={{pr:5}}>
               <Card sx={{width:'300px',height:'200px',display:'flex',justifyContent:'center',alignItems:'start',borderRadius:3,backgroundColor:'#343434',flexDirection:'column'}}>
