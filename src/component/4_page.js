@@ -30,19 +30,19 @@ export default function Fourth(){
     return(
         <Box sx={{ display:'flex',justifyContent:{xs:'center',md:'end'},alignItems:'center',flexDirection:'column',width:'100%',height:{xs:'100vh',md:'100%'}}}>
           <Box sx={{px:2,display:'flex',justifyContent:'flex-end',alignItems:'center',flexDirection:'column'}}>
-          <Box sx={{backgroundColor :'#899ED2',width:'80px',height:'25px',borderRadius:3,display:'flex',justifyContent:'center',alignItems:'center'}}>
+          <Box sx={{backgroundColor :'#899ED2',width:'80px',height:'25px',borderRadius:3,display:'flex',justifyContent:'center',alignItems:'center',mb:2}}>
               <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color:'white'}}>
                 데이터
               </Typography>
             </Box>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <Typography sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   기억하기 어려운 세부내용
                 </Typography>
-                <Typography sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   BUNDLE 에 다 있어요
                 </Typography>
-                <Typography ref={textRef} sx={{fontSize:{xs:20,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                <Typography ref={textRef} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
                   활동기록, 배운점 등 모든 기록이 여기에 있어요
                 </Typography>
             </Box>

@@ -8,7 +8,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import './navbar.css';
 import Button from '@mui/material/Button';
-import {Link,Divider} from "@mui/material";
+import {Link} from "@mui/material";
+import Drawer from './drawer';
+
 
 
 export default function PrimarySearchAppBar() {
@@ -46,37 +48,49 @@ export default function PrimarySearchAppBar() {
             </Link>
 
           <Box sx={{ flexGrow: 1 }} />
-          <Typography
-                    variant="h4"
-                    noWrap
-                    component="div"
-                    sx={{ display: { xs: 'block', sm: 'block' },pr:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
-                >
-                    홈
-          </Typography>
-          <Typography
-                    variant="h4"
-                    noWrap
-                    component="div"
-                    sx={{ display: { xs: 'block', sm: 'block' },pr:4,pl:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
-                >
-                    자주하는 질문
-          </Typography>
-          <Typography
-                    variant="h4"
-                    noWrap
-                    component="div"
-                    sx={{ display: { xs: 'block', sm: 'block' } ,pl:4,pr:5,fontSize:20,fontFamily:'SUIT Variable'}}
-                >
-                    문의하기
-            </Typography>
-          <Link href="/Dashboard">
-            <Button variant="contained" pill sx={{borderRadius:8}}>
-                <Typography color="white" sx={{fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    지금 시작하기
-                </Typography>
-            </Button>
-          </Link>
+          <Box sx={{display: { xs: 'none', md: 'flex' },justifyContent:'center',alignItems:'center'}}>
+            <Link underline="none" color="inherit" href="/">
+              <Typography
+                        variant="h4"
+                        noWrap
+                        component="div"
+                        sx={{ display: { xs: 'block', sm: 'block' },pr:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
+                    >
+                        홈
+              </Typography>
+            </Link>
+            <Link underline="none" color="inherit" href="/">
+              <Typography
+                        variant="h4"
+                        noWrap
+                        component="div"
+                        sx={{ display: { xs: 'block', sm: 'block' },pr:4,pl:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
+                    >
+                        자주하는 질문
+              </Typography>
+            </Link>
+            <Link underline="none" color="inherit" href="/">
+              <Typography
+                        variant="h4"
+                        noWrap
+                        component="div"
+                        sx={{ display: { xs: 'block', sm: 'block' } ,pl:4,pr:5,fontSize:20,fontFamily:'SUIT Variable'}}
+                    >
+                        문의하기
+              </Typography>
+            </Link>
+            <Link href="/Dashboard">
+              <Button variant="contained" pill sx={{borderRadius:8}}>
+                  <Typography color="white" sx={{fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                      지금 시작하기
+                  </Typography>
+              </Button>
+            </Link>
+          </Box>
+
+          <Box sx={{display:{xs:'flex',md:'none'}}}>
+            <Drawer/>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

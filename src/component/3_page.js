@@ -30,19 +30,19 @@ export default function Fourth(){
     return(
         <Box sx={{ display:'flex',justifyContent:{xs:'center',md:'end'},alignItems:'center',flexDirection:'column',width:'100%',height:{xs:'100vh',md:'100%'}}}>
           <Box sx={{px:2,display:'flex',justifyContent:'start',alignItems:'center',flexDirection:'column'}}>
-            <Box sx={{backgroundColor :'#899ED2',width:'80px',height:'25px',borderRadius:3,display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <Box sx={{backgroundColor :'#899ED2',width:'80px',height:'25px',borderRadius:3,display:'flex',justifyContent:'center',alignItems:'center',mb:2}}>
               <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color:'white'}}>
                 기록
               </Typography>
             </Box>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <Typography sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                  막막한 커리어 기록
                 </Typography>
-                <Typography sx={{fontSize:{xs:35,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   양식에다 작성하세요
                 </Typography>
-                <Typography ref={textRef} sx={{fontSize:{xs:20,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                <Typography ref={textRef} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
                   기록 양식이 제공되어 기록에 대한 고민이 없게
                 </Typography>
             </Box>

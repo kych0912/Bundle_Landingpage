@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import FullPageScroll from './FullPageScroll';
-import Navbar from '../src/component/navbar';
+import Navbar from './component/Navbar/navbar';
 import './App.css';
 import DashBoard from "./component/DahsBoard/DashBoard";
 import {

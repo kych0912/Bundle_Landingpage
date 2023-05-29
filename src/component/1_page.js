@@ -46,7 +46,7 @@ export default function First(){
             </Box>
           </Box>
           <Box sx={{display:'flex',justifyContent:'start',alignItems:'start'}}>
-            <Box sx ={{pt:2}}>
+            <Box ref={(el)=>refs.current[2]=el} sx ={{pt:2,opacity:0}}>
               <Button variant="contained" pill sx={{backgroundColor : "white", border:1,color:'white',borderRadius:3,width:{xs:170,md:200},height:{xs:40,md:60}}}>
                   <Typography color="black" sx={{fontFamily:'SUIT Variable',fontWeight:"bold",fontSize:{xs:20,md:25}}}>
                       지금 시작하기

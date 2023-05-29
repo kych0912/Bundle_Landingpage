@@ -44,7 +44,7 @@ export default function TemporaryDrawer() {
         onKeyDown={toggleDrawer(anchor, false)}
         >
         <List sx={{backgroundColor:"gray"}}>
-            {['Media', 'Contact', 'Recruit'].map((text, index) => (
+            {['홈', '자주하는 질문', '문의하기'].map((text, index) => (
             <ListItem key={text} disablePadding>
                 <ListItemButton >
                     <Link underline="none" color="inherit" sx={{width:"100%"}} href={link[index]}>
@@ -69,7 +69,7 @@ export default function TemporaryDrawer() {
     <div>
         <React.Fragment key={'top'}>
             <Button onClick={toggleDrawer('top', true)}>
-                <AiOutlineMenu size ='27' color={scrollPosition < 100 ? 'white': 'black'}/>
+                <AiOutlineMenu size ='27' color={scrollPosition > 1200 ? 'black': 'white'}/>
             </Button>
             <Drawer
             anchor={'top'}

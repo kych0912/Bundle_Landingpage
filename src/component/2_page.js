@@ -53,7 +53,6 @@ export default function Second(){
             </Box>
           </Box>
 
-          <Box sx={{display:{ xs: 'flex', md: 'none ' },pt:10,justifyContent:'center',alignItems:'center'}}>
             <Swiper navigation={true} modules={[Navigation]}>
               <SwiperSlide>
                 <Box sx={{}}>
@@ -122,7 +121,7 @@ export default function Second(){
                 </Box>
               </SwiperSlide>
             </Swiper>
-          </Box>
+                      
 
           <Box sx ={{display:{xs:'none',md:'flex'},justifyContent:'center',alignItems:'center',pt:10}}>
             <Box sx={{pr:5}}>
