@@ -22,7 +22,7 @@ export default function PrimarySearchAppBar() {
     });
   return (
     <Box sx={{ flexGrow: 1, color:'white'}}>
-      <AppBar width="100%" position="fixed" color = {scrollPosition > 1200 ? '': 'transparent'} elevation={0} sx={{opacity: scrollPosition > {xs:3800,md:3200} ? 0 : 1}} >
+      <AppBar width="100%" position="fixed" color = {scrollPosition > 1200 ? '': 'transparent'} elevation={0} sx={{opacity: scrollPosition > 3200 ? 0 : 1}} >
         <Toolbar sx = {{height:70, size:30}}>
             <Link underline="none" color="inherit" href="/">
               <Typography
