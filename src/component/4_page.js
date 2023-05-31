@@ -53,7 +53,7 @@ export default function Fourth(){
                   &nbsp;에 다 있어요
                   </Typography>
                 </Box>
-                <Typography ref={textRef} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
                   활동기록, 배운점 등 모든 기록이 여기에 있어요
                 </Typography>
             </Box>
@@ -63,8 +63,7 @@ export default function Fourth(){
                 sx={{
                   width: {xs:'350px',md:"70vh"},
                   opacity:0,
-                  borderTopLeftRadius:15,
-                  borderTopRightRadius:15
+                  borderRadius:3
                 }}
                 alt="The house from the offer."
                 src={imageA}
