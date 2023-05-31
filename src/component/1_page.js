@@ -4,7 +4,7 @@ import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import "./page.css"
-import imageA from "../img/portfolio.png";
+import imageA from "../img/Main_page.png";
 import MainImage from "../img/bundle_bg.jpg"
 
 export default function First(){

@@ -10,7 +10,8 @@ import './navbar.css';
 import Button from '@mui/material/Button';
 import {Link} from "@mui/material";
 import Drawer from './drawer';
-
+import logo from "../../img/bundle_logo.png"
+import white_logo from "../../img/logo_white.png"
 
 
 export default function PrimarySearchAppBar() {
@@ -27,24 +28,14 @@ export default function PrimarySearchAppBar() {
       <AppBar width="100%" position="fixed" color = {scrollPosition > 1200 ? '': 'transparent'} elevation={0} sx={{opacity: scrollPosition > 3200 ? 0 : 1}} >
         <Toolbar sx = {{height:70, size:30}}>
             <Link underline="none" color="inherit" href="/">
-              <Typography
-                  variant="h4"
-                  noWrap
-                  component="div"
-                  sx={{ display: { xs: 'none', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-              >
-                Bundle
-              </Typography>
-            </Link>
-            <Link underline="none" color="inherit" href="/">
-              <Typography
-                  variant="h4"
-                  noWrap
-                  component="div"
-                  sx={{ display: { xs: 'block', sm: 'none' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold"}}
-              >
-                  Bundle
-              </Typography>
+              <Box
+                component="img"
+                sx={{
+                  width:'100px'
+                }}
+                alt="The house from the offer."
+                src={scrollPosition > 1200 ? logo: white_logo}
+              />
             </Link>
 
           <Box sx={{ flexGrow: 1 }} />
@@ -66,7 +57,7 @@ export default function PrimarySearchAppBar() {
                         component="div"
                         sx={{ display: { xs: 'block', sm: 'block' },pr:4,pl:4,fontSize:20,fontFamily:'SUIT Variable', borderRight: 1 }}
                     >
-                        자주하는 질문
+                        팀 소개
               </Typography>
             </Link>
             <Link underline="none" color="inherit" href="/">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import imageA from "../img/write.png";
+import imageA from "../img/Write_page.png";
 
 export default function Fourth(){
     const refs=useRef([]);// ref는 배열로 관리
@@ -36,10 +36,10 @@ export default function Fourth(){
               </Typography>
             </Box>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                  막막한 커리어 기록
                 </Typography>
-                <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   양식에다 작성하세요
                 </Typography>
                 <Typography ref={textRef} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
@@ -50,7 +50,7 @@ export default function Fourth(){
                 ref={(el)=>refs.current[0]=el}
                 component="img"
                 sx={{
-                  width: {xs:'350px',md:"80vh"},
+                  width: {xs:'350px',md:"70vh"},
                   opacity:0,
                   borderTopLeftRadius:15,
                   borderTopRightRadius:15

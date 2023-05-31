@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import imageA from "../img/write.png";
+import imageA from "../img/Main_page.png";
+import logo from "../img/bundle_logo.png"
 
 export default function Fourth(){
     const refs=useRef([]);// ref는 배열로 관리
@@ -43,10 +44,20 @@ export default function Fourth(){
             </Box>
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                  <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    BUNDLE 이 대신
+                  <Box sx={{display:'flex'}}>
+                    <Box
+                      component="img"
+                      sx={{
+                        width:{xs:'130px',md:'220px'}
+                      }}
+                      alt="The house from the offer."
+                      src={logo}
+                    />
+                    <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                    &nbsp;이 대신
                   </Typography>
-                  <Typography sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                  </Box>
+                  <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                     첫 포트폴리오를 만들어드려요
                   </Typography>
                 </Box>
@@ -68,7 +79,7 @@ export default function Fourth(){
                 ref={imgRef}
                 component="img"
                 sx={{
-                  width: {xs:'350px',md:"80vh"},
+                  width: {xs:'350px',md:"70vh"},
                   opacity:0,
                   borderTopLeftRadius:15,
                   borderTopRightRadius:15
