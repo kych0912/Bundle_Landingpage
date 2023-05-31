@@ -71,8 +71,8 @@ export default function PrimarySearchAppBar() {
               </Typography>
             </Link>
             <Link href="/Dashboard">
-              <Button variant="contained" pill sx={{borderRadius:8}}>
-                  <Typography color="white" sx={{fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+              <Button variant="contained" pill sx={{borderRadius:8,backgroundColor: scrollPosition > 1200 ? "black": "white"}}>
+                  <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color: scrollPosition > 1200 ? "white": "black"}}>
                       지금 시작하기
                   </Typography>
               </Button>
