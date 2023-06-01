@@ -23,7 +23,7 @@ export default function Fifth(){
                     베타테스터로 참여하세요
                   </Typography>
                   <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    ~6월 30일까지
+                    ~6월 30일(금)까지
                   </Typography>
                 </Box>
                 <Box sx={{pt:2}}>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import imageA from "../img/Main_page.png";
+import imageA from "../img/Organize_page.png";
 
 export default function Fourth(){
     const refs=useRef([]);// ref는 배열로 관리
@@ -50,7 +50,7 @@ export default function Fourth(){
                     Bundle
                     </Typography>
                     <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    &nbsp;이 대신
+                    &nbsp;이 여러분 대신
                     </Typography>
                   </Box>
                   <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
@@ -59,7 +59,7 @@ export default function Fourth(){
                 </Box>
                 <Box sx={{display:{xs:'flex',md:'none'},alignItems:'center',justifyContent:'center',flexDirection:'column'}}>
                   <Typography ref={(el)=>refs.current[0]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
-                    작성한 커리어 기록을 바탕으로
+                    작성한 커리어 기록을
                   </Typography>
                   <Typography ref={(el)=>refs.current[1]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
                     자동으로 정리해줘요
@@ -67,7 +67,7 @@ export default function Fourth(){
                 </Box>
                 <Box sx={{display:{xs:'none',md:'block'}}}>
                   <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
-                    작성한 커리어 기록을 바탕으로 자동으로 정리해줘요
+                    작성한 커리어 기록을 자동으로 정리해줘요
                   </Typography>
                 </Box>
             </Box>
