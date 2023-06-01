@@ -47,7 +47,7 @@ export default function First(){
           </Box>
           <Box sx={{display:'flex',justifyContent:'start',alignItems:'start'}}>
             <Box ref={(el)=>refs.current[2]=el} sx ={{pt:2,opacity:0}}>
-              <Button variant="contained" color="inherit" sx={{borderRadius:3,width:{xs:170,md:200},height:{xs:40,md:60}}}>
+              <Button variant="contained" color="inherit" sx={{borderRadius:3,width:{xs:170,md:220},height:{xs:40,md:60}}}>
                   <Typography color="black" sx={{fontFamily:'SUIT Variable',fontWeight:"bold",fontSize:{xs:20,md:25}}}>
                       베타테스트 신청
                   </Typography>
