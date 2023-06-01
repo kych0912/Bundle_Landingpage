@@ -9,7 +9,7 @@ import { Typography } from '@mui/material';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from '@mui/material';
 
-const link = ['/','https://befitting-jodhpur-407.notion.site/WE-ARE-BUNDLE-b5e472b3daea44948e021b9ec0b1bd91','/','/'];
+const link = ['/','https://befitting-jodhpur-407.notion.site/WE-ARE-BUNDLE-b5e472b3daea44948e021b9ec0b1bd91','http://pf.kakao.com/_yeryxj/chat','/'];
 
 export default function TemporaryDrawer() {
 
