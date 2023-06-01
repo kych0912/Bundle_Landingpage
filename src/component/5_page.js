@@ -23,11 +23,13 @@ export default function Fourth(){
       });
 
       gsap.to(imgRef.current,2,{
+        scrollTrigger:refs.current[0],
         delay:1.8,
         opacity:1
       })
 
       gsap.to(textRef.current,2,{
+        scrollTrigger:refs.current[0],
       delay:0.9,
       opacity:1
     })

@@ -43,7 +43,7 @@ export default function PrimarySearchAppBar() {
                         홈
               </Typography>
             </Link>
-            <Link underline="none" color="inherit" href="/">
+            <Link underline="none" color="inherit" href="https://befitting-jodhpur-407.notion.site/WE-ARE-BUNDLE-b5e472b3daea44948e021b9ec0b1bd91">
               <Typography
                         variant="h4"
                         noWrap
@@ -53,7 +53,7 @@ export default function PrimarySearchAppBar() {
                         팀 소개
               </Typography>
             </Link>
-            <Link underline="none" color="inherit" href="/">
+            <Link underline="none" color="inherit" href="http://pf.kakao.com/_yeryxj/chat">
               <Typography
                         variant="h4"
                         noWrap
@@ -63,7 +63,7 @@ export default function PrimarySearchAppBar() {
                         문의하기
               </Typography>
             </Link>
-            <Link href="/Dashboard">
+            <Link href="/">
               <Button variant="contained" pill sx={{borderRadius:8,backgroundColor: scrollPosition > 1200 ? "black": "white"}}>
                   <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color: scrollPosition > 1200 ? "white": "black"}}>
                       지금 신청하기
