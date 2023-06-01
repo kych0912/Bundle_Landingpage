@@ -4,7 +4,6 @@ import { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import imageA from "../img/Main_page.png";
-import logo from "../img/bundle_logo.png"
 
 export default function Fourth(){
     const refs=useRef([]);// ref는 배열로 관리
@@ -45,16 +44,11 @@ export default function Fourth(){
             <Box sx={{pb:5,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                   <Box sx={{display:'flex'}}>
-                    <Box
-                      component="img"
-                      sx={{
-                        width:{xs:'130px',md:'220px'}
-                      }}
-                      alt="The house from the offer."
-                      src={logo}
-                    />
+                    <Typography sx={{fontSize:{xs:28,md:50},fontFamily:"Adam Script" ,color :"#203A7B"}}>
+                    Bundle
+                    </Typography>
                     <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    &nbsp;이 대신
+                    이 대신
                   </Typography>
                   </Box>
                   <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>

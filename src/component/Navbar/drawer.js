@@ -9,7 +9,7 @@ import { Typography } from '@mui/material';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from '@mui/material';
 
-const link = ['/Press','/FAQ','/Recruit'];
+const link = ['/','/','/'];
 
 export default function TemporaryDrawer() {
 
@@ -43,8 +43,8 @@ export default function TemporaryDrawer() {
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
         >
-        <List sx={{backgroundColor:"gray"}}>
-            {['홈', '팀 소개', '문의하기'].map((text, index) => (
+        <List sx={{backgroundColor:"white"}}>
+            {['홈', '팀 소개', '문의하기','지금 신청하기'].map((text, index) => (
             <ListItem key={text} disablePadding>
                 <ListItemButton >
                     <Link underline="none" color="inherit" sx={{width:"100%"}} href={link[index]}>
@@ -52,8 +52,8 @@ export default function TemporaryDrawer() {
                             variant="h4"
                             noWrap
                             component="div"
-                            color ="white"
-                            sx={{ display: { xs: 'block', sm: 'block' },pr:5,fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",width:'100%'}}
+                            color ="black"
+                            sx={{ display: { xs: 'block', sm: 'block' },fontSize:25,fontFamily:'SUIT Variable',fontWeight:"bold",width:'100%'}}
                         >
                             {text}
                         </Typography>

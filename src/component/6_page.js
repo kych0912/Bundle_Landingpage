@@ -12,17 +12,22 @@ export default function Fifth(){
                 <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   번들에서 관리하세요
                 </Typography>
-                <Box sx={{pt:1, display:'flex',flexDirection:'column',alignItems:'center'}}>
+                <Box sx={{pt:1, display:'flex',flexDirection:'column',alignItems:'center',flexDirection:'column'}}>
                   <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    지금 하고있는 활동부터 번들을 활용해보세요
+                    베타테스트에 참여하세요
+                  </Typography>
+                  <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                    ~6월 30일까지
                   </Typography>
                 </Box>
-                <Box sx={{pt:5}}>
-                  <Button variant="contained" pill sx={{backgroundColor : "white", border:1,color:'white',borderRadius:8,width:200,height:60}}>
-                    <Typography color="black" sx={{fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                        지금 시작하기
-                    </Typography>
-                  </Button>
+                <Box sx={{pt:2}}>
+                  <Link underline="none" color="inherit" href="https://forms.gle/K5DJy9W8r2RTmftW7">
+                    <Button variant="contained" color="inherit" sx={{borderRadius:8,width:200,height:60}}>
+                      <Typography color="black" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                          지금 신청하기
+                      </Typography>
+                    </Button>
+                  </Link>
                 </Box>
             </Box>
           </Box>

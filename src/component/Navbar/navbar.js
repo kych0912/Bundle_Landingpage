@@ -10,8 +10,6 @@ import './navbar.css';
 import Button from '@mui/material/Button';
 import {Link} from "@mui/material";
 import Drawer from './drawer';
-import logo from "../../img/bundle_logo.png"
-import white_logo from "../../img/logo_white.png"
 
 
 export default function PrimarySearchAppBar() {
@@ -28,14 +26,9 @@ export default function PrimarySearchAppBar() {
       <AppBar width="100%" position="fixed" color = {scrollPosition > 1200 ? '': 'transparent'} elevation={0} sx={{opacity: scrollPosition > 3200 ? 0 : 1}} >
         <Toolbar sx = {{height:70, size:30}}>
             <Link underline="none" color="inherit" href="/">
-              <Box
-                component="img"
-                sx={{
-                  width:'100px'
-                }}
-                alt="The house from the offer."
-                src={scrollPosition > 1200 ? logo: white_logo}
-              />
+              <Typography color = {scrollPosition > 1200 ? "#203A7B": "white"} sx={{fontSize:{xs:28,md:40},fontFamily:"Adam Script"}}>
+                Bundle
+              </Typography>
             </Link>
 
           <Box sx={{ flexGrow: 1 }} />
@@ -73,7 +66,7 @@ export default function PrimarySearchAppBar() {
             <Link href="/Dashboard">
               <Button variant="contained" pill sx={{borderRadius:8,backgroundColor: scrollPosition > 1200 ? "black": "white"}}>
                   <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color: scrollPosition > 1200 ? "white": "black"}}>
-                      지금 시작하기
+                      지금 신청하기
                   </Typography>
               </Button>
             </Link>
