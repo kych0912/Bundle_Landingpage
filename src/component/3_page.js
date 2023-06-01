@@ -40,7 +40,7 @@ export default function Fourth(){
                  막막한 커리어 기록
                 </Typography>
                 <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                  양식에다 작성하세요
+                  양식에 작성하세요
                 </Typography>
                 <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
                   기록 양식이 제공되어 기록에 대한 고민이 없게

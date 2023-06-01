@@ -1,5 +1,6 @@
 import {Box,Typography,Button,Link} from '@mui/material';
 import React, { useState } from "react";
+import "../Fonts/font.css";
 
 export default function Fifth(){
     return(
@@ -9,12 +10,17 @@ export default function Fifth(){
                 <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   휘발되는 커리어들
                 </Typography>
-                <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                  번들에서 관리하세요
-                </Typography>
+                <Box sx={{display:'flex'}}>
+                    <Typography sx={{fontSize:{xs:28,md:50},fontFamily:"Adam Script" ,color :"white"}}>
+                      Bundle
+                    </Typography>
+                    <Typography color="white" sx={{fontSize:{xs:30,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
+                    &nbsp;에서 관리하세요
+                    </Typography>
+                </Box>
                 <Box sx={{pt:1, display:'flex',flexDirection:'column',alignItems:'center',flexDirection:'column'}}>
                   <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    베타테스트에 참여하세요
+                    베타테스터로 참여하세요
                   </Typography>
                   <Typography color="white" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                     ~6월 30일까지

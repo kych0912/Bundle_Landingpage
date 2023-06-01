@@ -58,7 +58,7 @@ export default function Second(){
                 <Box sx={{}}>
                   <Card sx={{width:'300px',height:'200px',display:'flex',justifyContent:'center',alignItems:'start',borderRadius:3,backgroundColor:'#343434',flexDirection:'column'}}>
                     <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:600,pl:3}}>
-                      그 자료 어딨더라...
+                      그 자료 어디 있더라...
                     </Typography>
                     <Typography color="white" sx={{fontSize:15,fontFamily:'SUIT Variable',fontWeight:400,pl:3}}>
                       커리어 정리가 어려워요
@@ -127,7 +127,7 @@ export default function Second(){
             <Box sx={{pr:5}}>
               <Card sx={{width:'300px',height:'200px',display:'flex',justifyContent:'center',alignItems:'start',borderRadius:3,backgroundColor:'#343434',flexDirection:'column'}}>
                 <Typography color="white" sx={{fontSize:20,fontFamily:'SUIT Variable',fontWeight:600,pl:3}}>
-                  그 자료 어딨더라...
+                  그 자료 어디 있더라...
                 </Typography>
                 <Typography color="white" sx={{fontSize:15,fontFamily:'SUIT Variable',fontWeight:400,pl:3}}>
                   커리어 정리가 어려워요

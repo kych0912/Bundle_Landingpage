@@ -22,7 +22,6 @@ export default function First(){
         delay:0.9*2,
         opacity:1
       })
-
   },[])
     return(
       <Box  sx={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',backgroundColor:'#141414',height:{xs:'100vh',md:'100%'},pt:{xs:5,md:8},flexDirection:{xs:'column',md:'row'},backgroundImage:`url(${MainImage})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'top center'}}>
@@ -62,7 +61,7 @@ export default function First(){
           sx={{
             width: {xs:'350px',md:"90vh"},
             opacity:0,
-            borderRadius:5
+            
           }}
           src={imageA}
           />

@@ -50,8 +50,8 @@ export default function Fourth(){
                     Bundle
                     </Typography>
                     <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                    이 대신
-                  </Typography>
+                    &nbsp;이 대신
+                    </Typography>
                   </Box>
                   <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                     첫 포트폴리오를 만들어드려요

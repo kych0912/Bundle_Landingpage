@@ -45,7 +45,7 @@ export default function Fourth(){
                   Bundle
                   </Typography>
                   <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
-                  에 다 있어요
+                  &nbsp;에 다 있어요
                   </Typography>
                 </Box>
                 <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
