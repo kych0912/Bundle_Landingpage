@@ -21,18 +21,6 @@ import { Navigation } from "swiper";
 export default function Second(){
   const refs = useRef([]);
 
-  useEffect(()=>{
-    gsap.registerPlugin(ScrollTrigger);
-    refs.current.forEach(function(textanimation,index){
-      gsap.to(textanimation,1,{
-          //메인페이지 렌더링 되자마자가 아니라 두번째 랜딩페이지로 오면 애니메이션 실행되도록
-          scrollTrigger:refs.current[0],
-        delay:(index+1)*1,
-        opacity:1
-      })
-    });
-  },[])
-
     return(
         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column', width:'100%',backgroundColor:'#202020',height:{xs:'100vh',md:'100%'}}}>
           <Box sx={{px:2,display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
@@ -86,7 +74,6 @@ export default function Second(){
                       정리를 안해놔서 까먹어요
                     </Typography>
                       <Box
-                      ref={(el)=>refs.current[0]=el}
                       component="img"
                       sx={{
                         height: "110px",
@@ -108,7 +95,6 @@ export default function Second(){
                       활동을 기록할 때 막막해요
                     </Typography>
                     <Box
-                    ref={(el)=>refs.current[0]=el}
                     component="img"
                     sx={{
                       height: "110px",
@@ -133,7 +119,6 @@ export default function Second(){
                   커리어 정리가 어려워요
                 </Typography>
                 <Box
-                ref={(el)=>refs.current[0]=el}
                 component="img"
                 sx={{
                   height: "110px",
@@ -153,7 +138,6 @@ export default function Second(){
                   정리를 안해놔서 까먹어요
                 </Typography>
                   <Box
-                  ref={(el)=>refs.current[0]=el}
                   component="img"
                   sx={{
                     height: "110px",
@@ -173,7 +157,6 @@ export default function Second(){
                   활동을 기록할 때 막막해요
                 </Typography>
                 <Box
-                ref={(el)=>refs.current[0]=el}
                 component="img"
                 sx={{
                   height: "110px",

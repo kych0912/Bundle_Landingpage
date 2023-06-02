@@ -53,7 +53,7 @@ export default function PrimarySearchAppBar() {
                         팀 소개
               </Typography>
             </Link>
-            <Link underline="none" color="inherit" href="http://pf.kakao.com/_yeryxj/chat">
+            <Link underline="none" color="inherit" href="http://pf.kakao.com/_yeryxj">
               <Typography
                         variant="h4"
                         noWrap
