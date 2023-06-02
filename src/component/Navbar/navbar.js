@@ -43,7 +43,7 @@ export default function PrimarySearchAppBar() {
                         홈
               </Typography>
             </Link>
-            <Link underline="none" color="inherit" href="https://befitting-jodhpur-407.notion.site/WE-ARE-BUNDLE-b5e472b3daea44948e021b9ec0b1bd91">
+            <Link underline="none" color="inherit" href="https://bundleportfolio.notion.site/WE-ARE-BUNDLE-1b79ec95b9604014b5497d49707e0ebd">
               <Typography
                         variant="h4"
                         noWrap
