@@ -24,7 +24,7 @@ export default function Fourth(){
                 <Typography sx={{fontSize:{xs:28,md:50},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                   양식에 작성하세요
                 </Typography>
-                <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',fontWeight:600}}>
                   기록 양식이 제공되어 기록에 대한 고민이 없게
                 </Typography>
             </Box>
@@ -33,7 +33,6 @@ export default function Fourth(){
                 component="img"
                 sx={{
                   width: {xs:'350px',md:"70vh"},
-                  opacity:0,
                   borderRadius:3
                 }}
                 alt="The house from the offer."

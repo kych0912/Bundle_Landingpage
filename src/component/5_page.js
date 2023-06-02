@@ -33,15 +33,15 @@ export default function Fourth(){
                   </Typography>
                 </Box>
                 <Box sx={{display:{xs:'flex',md:'none'},alignItems:'center',justifyContent:'center',flexDirection:'column'}}>
-                  <Typography ref={(el)=>refs.current[0]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                  <Typography ref={(el)=>refs.current[0]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',fontWeight:600}}>
                     작성한 커리어 기록을
                   </Typography>
-                  <Typography ref={(el)=>refs.current[1]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                  <Typography ref={(el)=>refs.current[1]=el} sx={{fontSize:{xs:18,md:25},fontFamily:'SUIT Variable',fontWeight:600}}>
                     자동으로 정리해줘요
                   </Typography>
                 </Box>
                 <Box sx={{display:{xs:'none',md:'block'}}}>
-                  <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',opacity:0,fontWeight:600}}>
+                  <Typography ref={textRef} sx={{fontSize:{xs:15,md:25},fontFamily:'SUIT Variable',fontWeight:600}}>
                     작성한 커리어 기록을 자동으로 정리해줘요
                   </Typography>
                 </Box>
@@ -51,7 +51,6 @@ export default function Fourth(){
                 component="img"
                 sx={{
                   width: {xs:'350px',md:"70vh"},
-                  opacity:0,
                  borderRadius:3
                 }}
                 alt="The house from the offer."
