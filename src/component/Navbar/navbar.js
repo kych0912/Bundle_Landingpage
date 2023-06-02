@@ -63,7 +63,7 @@ export default function PrimarySearchAppBar() {
                         문의하기
               </Typography>
             </Link>
-            <Link href="https://docs.google.com/forms/d/1Kf1Pq9w4QxSq_bOy7w_lLF2M9156Hza4Q3W-3p2zK1w">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScx4M8OddpcO1YR2ItwztotM11Q8xua9aQExovuaWOzYfTZHg/viewform?usp=sf_link">
               <Button variant="contained" pill sx={{borderRadius:8,backgroundColor: scrollPosition > 1200 ? "black": "white"}}>
                   <Typography sx={{fontFamily:'SUIT Variable',fontWeight:"bold",color: scrollPosition > 1200 ? "white": "black"}}>
                       지금 신청하기

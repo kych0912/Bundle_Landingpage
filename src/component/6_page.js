@@ -27,7 +27,7 @@ export default function Fifth(){
                   </Typography>
                 </Box>
                 <Box sx={{pt:2}}>
-                  <Link underline="none" color="inherit" href="https://docs.google.com/forms/d/1Kf1Pq9w4QxSq_bOy7w_lLF2M9156Hza4Q3W-3p2zK1w">
+                  <Link underline="none" color="inherit" href="https://docs.google.com/forms/d/e/1FAIpQLScx4M8OddpcO1YR2ItwztotM11Q8xua9aQExovuaWOzYfTZHg/viewform?usp=sf_link">
                     <Button variant="contained" color="inherit" sx={{borderRadius:8,width:200,height:60}}>
                       <Typography color="black" sx={{fontSize:{xs:15,md:20},fontFamily:'SUIT Variable',fontWeight:"bold"}}>
                           지금 신청하기
