@@ -9,7 +9,7 @@ import { Typography } from '@mui/material';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {Link} from '@mui/material';
 
-const link = ['/','https://bundleportfolio.notion.site/WE-ARE-BUNDLE-1b79ec95b9604014b5497d49707e0ebd','http://pf.kakao.com/_yeryxj','https://docs.google.com/forms/d/1Kf1Pq9w4QxSq_bOy7w_lLF2M9156Hza4Q3W-3p2zK1w/edit'];
+const link = ['/','https://bundleportfolio.notion.site/WE-ARE-BUNDLE-1b79ec95b9604014b5497d49707e0ebd','http://pf.kakao.com/_yeryxj','https://docs.google.com/forms/d/1Kf1Pq9w4QxSq_bOy7w_lLF2M9156Hza4Q3W-3p2zK1w'];
 
 export default function TemporaryDrawer() {
 

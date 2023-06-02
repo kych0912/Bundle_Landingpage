@@ -32,11 +32,13 @@ export default function First(){
           </Box>
           <Box sx={{display:'flex',justifyContent:'start',alignItems:'start'}}>
             <Box x ={{pt:2}}>
-              <Button variant="contained" color="inherit" sx={{borderRadius:3,width:{xs:170,md:220},height:{xs:40,md:60}}}>
+              <Link  href="https://docs.google.com/forms/d/1Kf1Pq9w4QxSq_bOy7w_lLF2M9156Hza4Q3W-3p2zK1w">
+                <Button variant="contained" color="inherit" sx={{borderRadius:3,width:{xs:170,md:220},height:{xs:40,md:60}}}>
                   <Typography color="black" sx={{fontFamily:'SUIT Variable',fontWeight:"bold",fontSize:{xs:20,md:25}}}>
                       베타테스트 신청
                   </Typography>
-              </Button>
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Box>
